@@ -20,15 +20,26 @@ public class Principal {
 			System.out.println("ups, perdiste...");
 		do {
 			vida ++;
-			System.out.println("Vida:"+ vida + "\t¿Cual es el numero secreto si son 3 números cansecutivos?");
+			System.out.println("Vida:"+ vida + "\t¿Cual es el numero secreto si son 4 números cansecutivos?");
 			rp = sc.nextInt();
-			if (rp == 567)
+			if (rp == 5678)
 				fl = true;
 		}while(vida < 3 && !fl);
 		if (fl == true)
 			System.out.println("Adivinaste!!!");
 		else
 			System.out.println("ups, perdiste...");
+		do {
+			vida ++;
+			System.out.println("Vida:"+ vida + "\t¿Cual es el numero secreto si son 4 números cansecutivos y empieza con 5?");
+			rp = sc.nextInt();
+			if (rp == 5678)
+				fl = true;
+		}while(vida < 3 && !fl);
+		if (fl == true)
+			System.out.println("Adivinaste!!!, un poco tarde pero bien");
+		else
+			System.out.println("Perdiste... con pista y todo...");
 		
 	}
 }
