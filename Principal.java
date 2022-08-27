@@ -18,5 +18,17 @@ public class Principal {
 			System.out.println("Adivinaste!!!");
 		else
 			System.out.println("ups, perdiste...");
+		do {
+			vida ++;
+			System.out.println("Vida:"+ vida + "\t¿Cual es el numero secreto si son 3 números cansecutivos?");
+			rp = sc.nextInt();
+			if (rp == 567)
+				fl = true;
+		}while(vida < 3 && !fl);
+		if (fl == true)
+			System.out.println("Adivinaste!!!");
+		else
+			System.out.println("ups, perdiste...");
+		
 	}
 }
